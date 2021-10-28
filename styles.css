@@ -1,0 +1,71 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --green: hsl(184, 100%, 22%);
+  --dark-green: hsl(179, 100%, 13%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ddd;
+}
+
+.container {
+  display: flex;
+  border-radius: 7.5px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  height: 400px;
+}
+
+.card.orange {
+  background: var(--orange);
+}
+
+.card.green {
+  background: var(--green);
+}
+
+.card.dark-green {
+  background: var(--dark-green);
+}
+
+.title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 300;
+}
+
+.card-button {
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  width: 125px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.card-button.orange {
+  color: var(--orange);
+}
+
+.card-button.green {
+  color: var(--green);
+}
+
+.card-button.dark-green {
+  color: var(--dark-green);
+}
