@@ -51,11 +51,12 @@ body {
 
 .card-button {
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 45px;
   border: none;
   width: 125px;
   font-weight: bold;
   margin-top: auto;
+  cursor: pointer;
 }
 
 .card-button.orange {
@@ -68,4 +69,11 @@ body {
 
 .card-button.dark-green {
   color: var(--dark-green);
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    max-width: 350px;
+  }
 }
