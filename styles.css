@@ -2,6 +2,7 @@
   --orange: hsl(31, 77%, 52%);
   --green: hsl(184, 100%, 22%);
   --dark-green: hsl(179, 100%, 13%);
+  --white: #fff;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  color: #fff;
+  color: var(--white);
   font-size: 15px;
   line-height: 25px;
   height: 400px;
@@ -57,6 +58,7 @@ body {
   font-weight: bold;
   margin-top: auto;
   cursor: pointer;
+  transition: all 100ms;
 }
 
 .card-button.orange {
@@ -69,6 +71,12 @@ body {
 
 .card-button.dark-green {
   color: var(--dark-green);
+}
+
+.card-button:hover {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 
 @media (max-width: 800px) {
